@@ -1,0 +1,36 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0.9rem 1.6rem;
+
+    &:hover {
+        background: rgba(22, 24, 25, 0.1);
+        cursor: pointer;
+    }
+}
+
+.avata {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100rem;
+    flex-shrink: 0;
+}
+
+.info {
+    flex: 1;
+    margin-left: 1rem;
+    line-height: 1.7rem;
+}
+.check {
+    color: rgb(32, 213, 236);
+    margin-left: 0.5rem;
+}
+.name {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.username {
+    color: #939393;
+    font-size: 1.4rem;
+}

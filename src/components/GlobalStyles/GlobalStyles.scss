@@ -1,7 +1,11 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
 
 :root {
+    --primary-color: rgb(254 44 85);
+    --white-color: #fff;
+    --black-color: #161823;
+
+    --font-family: 'ProximaNova', sans-serif;
 }
 
 * {
@@ -15,8 +19,75 @@ html {
 }
 
 body {
-    font-family: 'IBM Plex Sans', san-serif;
+    font-family: var(--font-family);
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+}
+
+//Fonts chữ
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/TikTokFont-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/TikTokFont-Semibold.woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url('/assets/fonts/TikTokDisplayFont-Bold.woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: SofiaPro;
+    src: url('/assets/fonts/TikTokFont-Bold.woff2');
+    font-weight: 700;
+}
+// Chiều ngang của trang web trên giao diện pc
+.width-pc {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+//Hủy bỏ mặc định của thẻ
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+
+a[href] {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+//Custom tippy tooltip
+
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-content {
+        padding: 8px 10px;
+    }
+
+    .tippy-box[data-placement^='bottom'] .tippy-arrow::before {
+        top: -8px;
+    }
 }

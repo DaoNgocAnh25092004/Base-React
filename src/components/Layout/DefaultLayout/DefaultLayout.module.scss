@@ -1,0 +1,11 @@
+.container {
+    width: 100%;
+}
+
+.container--box {
+    display: flex;
+}
+.container--box > div:nth-child(2) {
+    flex: 1;
+    background-color: aquamarine;
+}

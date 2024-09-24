@@ -1,0 +1,62 @@
+.header {
+    height: 60px;
+    box-shadow: 1px 1px 10px #ccc;
+}
+
+.header__inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//Logo
+.header__inner--logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+}
+
+//Tools
+.header__inner--tools {
+    display: flex;
+    align-items: center;
+}
+
+.btn-upload {
+    margin-right: -1.5rem;
+}
+
+.more-btn {
+    font-size: 2rem;
+    margin: 0 -10px 0 18px;
+    padding: 1rem;
+    background-color: transparent;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.avata-user {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 100rem;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.btn-tools {
+    font-size: 2.2rem;
+    padding: 4px 12px;
+    color: #161823;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
