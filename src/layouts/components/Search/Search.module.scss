@@ -27,7 +27,7 @@
     font-family: var(--font-family);
 
     &:not(:placeholder-shown) ~ .header__inner--search__search {
-        background-color: rgba(22, 24, 35, 0.1);
+        // background-color: rgba(22, 24, 35, 0.1);
     }
 }
 

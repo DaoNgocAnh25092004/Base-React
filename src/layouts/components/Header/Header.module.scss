@@ -1,6 +1,12 @@
 .header {
-    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
     box-shadow: 1px 1px 10px #ccc;
+    background-color: var(--white-color);
+    z-index: 10;
 }
 
 .header__inner {

@@ -22,7 +22,7 @@ import { MenuHeader } from '~/components/Popper';
 import { InboxIcon } from '~/components/Icons';
 import Image from '~/components/Image';
 import Search from '../Search';
-import routesConfig from '~/config/routes';
+import config from '~/config';
 
 const cx = classNames.bind(styles);
 
@@ -35,7 +35,7 @@ const MENU_ITEMS = [
             title: 'Language',
             data: [
                 { code: 'en', title: 'English' },
-                { code: 'vi', title: 'Vietnamese' },
+                { code: 'vi', title: 'Tiếng Việt' },
             ],
         },
     },
@@ -90,7 +90,7 @@ function Header() {
         <header className={cx('header')}>
             <div className={cx('header__inner', 'width-pc')}>
                 <div className={cx('header__inner--logo')}>
-                    <Link to={routesConfig.home} className={cx('logo-link')}>
+                    <Link to={config.routes.home} className={cx('logo-link')}>
                         <img src={images.logo} alt="Logo" />
                     </Link>
                 </div>
